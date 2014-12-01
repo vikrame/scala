@@ -20,3 +20,27 @@ c: Circlr = $iwC$$iwC$$iwC$$iwC$Circlr@69945924
 
 scala> c
 res0: Circlr = $iwC$$iwC$$iwC$$iwC$Circlr@69945924
+
+//Trait
+scala> trait Car{
+     | val brand : String
+     | }
+defined trait Car
+
+scala> trait Model{
+     | val speed : Int
+     | }
+defined trait Model
+
+scala> class BMW extends Car{
+     | val brand = "3 Series"
+     | }
+defined class BMW
+
+//A Class can inherit multiple traits using "with"
+scala> class BMW5 extends Car with Model{
+     | val brand = "5Series"
+     | val speed = 170
+     | }
+defined class BMW5
+
