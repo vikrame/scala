@@ -5,6 +5,7 @@ scala> abstract class Shape{
      | }
 defined class Shape
 
+
 scala> class Circlr(r: Int) extends Shape{
      | def getArea():Int = { r * r * 3}
      | }
